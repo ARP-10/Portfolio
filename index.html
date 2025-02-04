@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    
+    <title>Portfolio Alejandra Rodríguez</title>
+</head>
+<body class="font-monospace">
+
+<!-- Menú -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid"> 
+    <a class="navbar-brand" href="#"><i class="bi bi-code-slash text-secondary" style="font-size: 2.5rem;"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <h5><a class="nav-link active" aria-current="page" href="#">Sobre mi</a></h5>
+        </li>
+        <li class="nav-item">
+          <h5><a class="nav-link" href="#tecnologias">Tecnologías</a></h5>
+        </li>
+        <li class="nav-item">
+          <h5><a class="nav-link" href="#proyectos">Proyectos</a></h5>
+        </li>
+        <li class="nav-item">
+          <h5><a class="nav-link" href="#contacto">Contacto</a></h5>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Encabezado -->
+  <header class="my-5 mx-3">
+    <div class="text-center mx-5">
+      <img src="https://pub-static.fotor.com/assets/projects/pages/d5bdd0513a0740a8a38752dbc32586d0/fotor-03d1a91a0cec4542927f53c87e0599f6.jpg" width="300" alt="perfil" class="rounded-circle">
+    </div></div>
+    <h1 class="text-center text-primary mt-3">Hola, soy Alejandra Rodríguez</h1>
+    <h5 class="text-center">Soy programadora fullstack</h5>
+  </header>
+
+  <!-- Tecnologias -->
+  <style>
+    /* Estilo por defecto: en pantallas pequeñas, las cajas se muestran en una sola columna */
+    .row > .col-md-4 {
+      flex: 1 1 100%; /* 1 columna en pantallas pequeñas */
+    }
+  
+    /* Estilo para pantallas grandes, mostrando 4 columnas en pantallas de escritorio */
+    @media (min-width: 992px) {
+      .row > .col-md-4 {
+        flex: 1 1 25%; /* 4 columnas en pantallas grandes */
+      }
+    }
+  
+    /* Estilo solo para pantallas horizontales (móviles en orientación horizontal) */
+    @media (orientation: landscape) {
+      .row > .col-md-4 {
+        flex: 1 1 50%; /* 2 columnas en pantallas horizontales (móviles) */
+      }
+    }
+  </style>
+  
+  <section id="tecnologias" class="m-4">
+    <h2 class="text-primary my-4">Tecnologías</h2>
+    <div class="row text-center">
+      <!-- Lenguajes de Programación -->
+      <div class="col-md-4 col-lg-3 mb-4 d-flex">
+        <div class="p-4 border rounded shadow-sm bg-dark text-white flex-grow-1">
+          <i class="bi bi-code-slash display-4 text-warning"></i>
+          <h3 class="mt-3">Lenguajes</h3>
+          <p>Java, Python, SQL, JavaScript, PHP, HTML, CSS, Kotlin</p>
+        </div>
+      </div>
+  
+      <!-- Frameworks y Librerías -->
+      <div class="col-md-4 col-lg-3 mb-4 d-flex">
+        <div class="p-4 border rounded shadow-sm bg-dark text-white flex-grow-1">
+          <i class="bi bi-layers display-4 text-warning"></i>
+          <h3 class="mt-3">Frameworks</h3>
+          <p>Spring, Bootstrap, Angular</p>
+        </div>
+      </div>
+  
+      <!-- Bases de Datos -->
+      <div class="col-md-4 col-lg-3 mb-4 d-flex">
+        <div class="p-4 border rounded shadow-sm bg-dark text-white flex-grow-1">
+          <i class="bi bi-database display-4 text-warning"></i>
+          <h3 class="mt-3">Bases de Datos</h3>
+          <p>MySQL, SQLite</p>
+        </div>
+      </div>
+  
+      <!-- Herramientas -->
+      <div class="col-md-4 col-lg-3 mb-4 d-flex">
+        <div class="p-4 border rounded shadow-sm bg-dark text-white flex-grow-1">
+          <i class="bi bi-tools display-4 text-warning"></i>
+          <h3 class="mt-3">Herramientas</h3>
+          <p>Android Studio, Eclipse, EclipseWindowBuilder, Git</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="m-4">
+    <h2 class="text-primary my-4">Proyectos</h2>
+    <div class="row text-center">
+      <!-- Proyecto 1 -->
+      <div class="col-md-4 col-lg-3 mb-4">
+        <div class="p-4 border border-dark rounded shadow-sm">
+          <i class="bi bi-filter-circle display-4 text-warning"></i>
+          <h3 class="mt-3">Colectif</h3>
+          <p>Aplicación para gestionar y compartir cuentas de servicios como Netflix, Amazon, Spotify, etc.</p>
+          <a href="https://github.com/ARP-10/Colectif" target="_blank" class="btn btn-outline-primary">
+            Ver más <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>  
+  
+<!-- Contacto -->
+<footer id="contacto" class="mt-auto text-bg-dark py-4">
+  <h4 class="text-center py-3">Conéctate conmigo</h4>
+  <div class="d-flex flex-column align-items-center justify-content-center">
+    <a href="mailto:alejandrarodriguezp97@gmail.com" class="btn btn-outline-secondary mb-3">
+      <i class="bi bi-envelope" style="font-size: 1.5rem;"></i> Correo
+    </a>
+    <a href="https://github.com/ARP-10" target="_blank" class="btn btn-outline-secondary mb-3">
+      <i class="bi bi-github" style="font-size: 1.5rem;"></i> GitHub
+    </a>
+    <a href="https://linkedin.com/in/tuusuario" target="_blank" class="btn btn-outline-secondary mb-3">
+      <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i> LinkedIn
+    </a>
+  </div>
+  <hr class="border-light">
+  <p class="mb-0 text-secondary text-center">© 2024 Alejandra Rodríguez</p>  
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
