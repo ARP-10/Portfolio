@@ -1,5 +1,7 @@
 # </> Portfolio - Alejandra Rodríguez
 
+🌐 [Visita mi portfolio](https://portfolio-arp-10s-projects.vercel.app)
+
 ¡Hola! Soy **Alejandra Rodríguez**, desarrolladora **Full Stack** enfocada en construir soluciones web y móviles que sean funcionales, accesibles y escalables. Este portfolio refleja algunos de mis proyectos más representativos, tecnologías favoritas y mi pasión por el desarrollo.
 
 ---
@@ -49,6 +51,5 @@
 
 ## 📫 Contacto
 
-- **LinkedIn:** [linkedin.com/in/alejandra-rodriguez](https://www.linkedin.com/in/alejandra-rodriguez)
 - **Email:** alejandrarodriguezp97@gmail.com
-- **Portfolio en vivo:** [alejandrarodriguez.dev](https://alejandrarodriguez.dev)
+- **Portfolio en vivo:** [Portfolio](https://portfolio-arp-10s-projects.vercel.app)

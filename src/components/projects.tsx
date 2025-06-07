@@ -132,13 +132,14 @@ export default function Projects() {
 
     return (
         <div id="projects" className="bg-polka-dots text-primary p-8">
-            <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 justify-items-center">
+            <div className="max-w-7xl mx-auto px-6 sm:px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 justify-items-center">
 
                 {projects.map(({ id, title, img, shortDesc, techIcons, github }) => (
                     <div
                         key={id}
-                        className="bg-secondary rounded-lg shadow-md w-96 flex flex-col justify-between p-4"
+                        className="bg-secondary rounded-lg shadow-md max-w-sm w-full flex flex-col justify-between p-4"
                     >
+
                         <div>
                             <img
                                 src={img}
@@ -152,21 +153,23 @@ export default function Projects() {
                         </div>
 
                         <div className="mt-4 flex justify-between items-center">
-                            <div className="flex space-x-3 text-primary text-xl">
+                            <div className="flex flex-wrap justify-center gap-3 text-primary text-lg sm:text-xl md:text-2xl">
                                 {techIcons.map((icon, i) => (
                                     <span key={i} className="hover:text-white transition">
                                         {icon}
                                     </span>
                                 ))}
                             </div>
+
                             <a
                                 href={github}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-3xl text-white bg-primary rounded-full p-2 hover:bg-primary/90 transition shadow-lg hover:scale-110"
+                                className="text-2xl sm:text-3xl text-white bg-primary rounded-full p-2 hover:bg-primary/90 transition shadow-lg hover:scale-110"
                             >
                                 <FaGithub />
                             </a>
+
                         </div>
 
                         <button
@@ -228,15 +231,16 @@ interface ModalProps {
 function Modal({ onClose, children }: ModalProps) {
     return (
         <div
-            className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+            className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4"
             onClick={onClose}
         >
             <div
-                className="bg-secondary rounded-lg p-6 max-w-md w-full shadow-lg"
-                onClick={(e) => e.stopPropagation()} // Evita cerrar al hacer click dentro
+                className="bg-secondary rounded-lg p-6 max-w-full max-h-full sm:max-w-md sm:max-h-[80vh] w-full overflow-auto shadow-lg"
+                onClick={(e) => e.stopPropagation()}
             >
                 {children}
             </div>
         </div>
+
     );
 }
