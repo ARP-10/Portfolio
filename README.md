@@ -1,72 +1,54 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# </> Portfolio - Alejandra Rodríguez
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Hola! Soy **Alejandra Rodríguez**, desarrolladora **Full Stack** enfocada en construir soluciones web y móviles que sean funcionales, accesibles y escalables. Este portfolio refleja algunos de mis proyectos más representativos, tecnologías favoritas y mi pasión por el desarrollo.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías
 
-## Expanding the ESLint configuration
+### 🖥️ Frontend
+- HTML5, CSS3, JavaScript, TypeScript
+- React, Next.js, Angular, Flutter
+- TailwindCSS, Markdown
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🧠 Backend
+- Node.js, Express.js, Spring Boot, PHP, Kotlin, Python
+- Firebase Functions, Hibernate, PowerShell
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 🛢️ Bases de Datos
+- MySQL, PostgreSQL, SQLite, MariaDB, MongoDB, Firebase
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🔧 DevOps y herramientas
+- Docker, Apache Tomcat, Git, GitHub, GitLab, Windows Terminal, NPM, Yarn, Nodemon
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-=======
-# Portfolio de Alejandra Rodríguez Peña
+## 🧩 Proyectos destacados
 
-Este repositorio contiene mi portfolio personal como desarrolladora. En él, podrás encontrar mis proyectos, habilidades y tecnologías que domino. Mi objetivo es mostrar mi trabajo y las experiencias adquiridas a lo largo de mi formación en desarrollo de software.
+### 📱 Colectif
+> Plataforma para compartir cuentas como Netflix o Spotify.
+- **Stack:** Kotlin, Android Studio, Firebase
+- 🔗 [Repositorio](https://github.com/ARP-10/Colectif)
 
-## Contenido del portfolio
+### 🌐 Code Padawan
+> Conecta aprendices y expertos a través de retos y blogs.
+- **Stack:** React, TypeScript, Tailwind CSS, Node.js, Firebase, Clerk
+- 🔗 [Repositorio](https://github.com/itxintxu13/CodePadawan)
 
-- **Sobre mí:** Información sobre mi formación y experiencia profesional.
-- **Tecnologías:** Las tecnologías y lenguajes de programación que utilizo en mis proyectos.
-- **Proyectos:** Una selección de los proyectos que he desarrollado, tanto en mis estudios como en proyectos personales.
+### 📚 Biblioteca Manga
+> Gestión de mangas, categorías y alquileres.
+- **Stack:** Java (Servlets, JSP), MySQL, Bootstrap, Tomcat
+- 🔗 [Repositorio](https://github.com/ARP-10/GestorBibliotecaManga)
 
-## Contacto
+### 🎓 ERM Cuático
+> Campus virtual con formación y administración académica.
+- **Stack:** Angular, Tailwind, Spring Boot, PostgreSQL
+- 🔗 [Repositorio](https://github.com/elurg/cuatico-dev)
 
-Si estás interesado en saber más sobre mis proyectos o en colaborar en algún futuro, puedes contactarme a través de:
+---
 
+## 📫 Contacto
+
+- **LinkedIn:** [linkedin.com/in/alejandra-rodriguez](https://www.linkedin.com/in/alejandra-rodriguez)
 - **Email:** alejandrarodriguezp97@gmail.com
->>>>>>> 68f1bc7e5b9195ae747430fa9d6149ed160d7643
+- **Portfolio en vivo:** [alejandrarodriguez.dev](https://alejandrarodriguez.dev)
