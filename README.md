@@ -52,4 +52,4 @@
 ## 📫 Contacto
 
 - **Email:** alejandrarodriguezp97@gmail.com
-- **Portfolio en vivo:** [alejandrarodriguez.dev]([https://alejandrarodriguez.dev](https://portfolio-arp-10s-projects.vercel.app))
+- **Portfolio en vivo:** ([https://alejandrarodriguez.dev](https://portfolio-arp-10s-projects.vercel.app))
