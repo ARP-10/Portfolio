@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaCode } from "react-icons/fa";
 
 export default function Minavbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -6,7 +7,8 @@ export default function Minavbar() {
   return (
     <nav className="bg-secondary text-primary p-4">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
-        <h1 className="text-xl font-bold">Alejandra Rodríguez</h1>
+        <FaCode className="text-5xl"/>
+        
 
         {/* Botón hamburguesa */}
         <button 

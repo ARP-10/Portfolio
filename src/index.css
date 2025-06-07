@@ -6,3 +6,12 @@
 body {
   font-family: 'Fira Code', monospace;
 }
+
+.bg-polka-dots {
+  background-image: radial-gradient(currentColor 5%, transparent 6%);
+  background-size: 20px 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
