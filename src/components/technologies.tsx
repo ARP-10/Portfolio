@@ -3,7 +3,7 @@ import {
   SiPhp, SiVite, SiDart, SiKotlin, SiFlutter, SiFirebase, SiApachetomcat,
   SiMysql, SiPostgresql, SiSpring, SiHibernate, SiSqlite, SiPython, SiMongodb, SiMariadb,
   SiGodotengine, SiGithubpages, SiVercel, SiSonarqube, SiVagrant, SiVirtualbox, SiJira,
-  SiSlack, SiMiro
+  SiSlack, SiMiro, SiAstro
 } from "react-icons/si";
 import {
   FaReact, FaNodeJs, FaBootstrap, FaAngular, FaJava, FaAndroid, FaUnity,
@@ -18,6 +18,7 @@ interface Technology {
 
 const frontendTechnologies: Technology[] = [
   { icon: FaReact, label: "React" },
+  { icon: SiAstro, label: "Astro" },
   { icon: FaAngular, label: "Angular" },
   { icon: FaBootstrap, label: "Bootstrap" },
   { icon: SiTailwindcss, label: "Tailwind CSS" },
@@ -25,7 +26,7 @@ const frontendTechnologies: Technology[] = [
   { icon: SiJavascript, label: "JavaScript" },
   { icon: SiHtml5, label: "HTML5" },
   { icon: SiCss3, label: "CSS3" },
-  { icon: SiFlutter, label: "Flutter" }, 
+  { icon: SiFlutter, label: "Flutter" },
 ];
 
 const backendTechnologies: Technology[] = [
@@ -82,38 +83,39 @@ const TechnologyGroup = ({
   title: string;
   items: Technology[];
 }) => (
-  <div className="flex flex-col items-center gap-4 max-w-xs m-3">
-    <h3 className="text-lg font-semibold text-center text-primary/80">{title}</h3>
-    <div className="flex flex-wrap justify-center gap-6">
-     {items.map(({ icon: Icon, label }) => (
-  <div
-    key={label}
-    className="relative group flex flex-col items-center"
-  >
-    {/* Texto arriba del icono */}
-    <span
-      className="absolute -top-6 text-sm text-primary opacity-0 group-hover:opacity-100 transition-opacity"
-    >
-      {label}
-    </span>
-    <Icon
-      title={label}
-      className="text-secondary hover:text-primary transition-all transform hover:scale-110 cursor-pointer"
-      aria-label={label}
-    />
-  </div>
-))}
-
+  
+    <div className="flex flex-col items-center gap-4 max-w-xs m-3 ">
+      <h3 className="text-lg font-semibold text-center text-primary/80">{title}</h3>
+      <div className="flex flex-wrap justify-center gap-6 mt-3">
+        {items.map(({ icon: Icon, label }) => (
+          <div
+            key={label}
+            className="relative group flex flex-col items-center"
+          >
+            <span className="absolute -top-6 text-sm text-tertiary opacity-0 group-hover:opacity-100 transition-opacity">
+              {label}
+            </span>
+            <Icon
+              title={label}
+              className="text-secondary hover:text-tertiary transition-all transform hover:scale-110 cursor-pointer"
+              aria-label={label}
+            />
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
+
 );
 
 export default function Technologies() {
   return (
-    <section className="m-6 technologies-container px-4">
-      <h2 className="text-3xl font-bold text-center text-primary mb-10">
+    <div className="w-full m-0 p-0 bg-secondary/10">
+    <section className="p-8 technologies-container px-4 ">
+      <h2 className="text-3xl font-bold text-center text-primary mb-10 relative">
         Stack tecnológico
+        <span className="block w-24 h-1 bg-tertiary rounded mx-auto mt-2"></span>
       </h2>
+
       <div className="flex flex-wrap gap-10 justify-center text-4xl">
         <TechnologyGroup title="Frontend" items={frontendTechnologies} />
         <TechnologyGroup title="Backend" items={backendTechnologies} />
@@ -122,5 +124,6 @@ export default function Technologies() {
         <TechnologyGroup title="Otros" items={otherTechnologies} />
       </div>
     </section>
+</div>
   );
 }

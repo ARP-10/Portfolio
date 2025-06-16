@@ -1,6 +1,5 @@
 import { useState } from "react";
 import type { ReactElement } from "react";
-import { FaGithub } from "react-icons/fa";
 import {
     SiKotlin,
     SiFirebase,
@@ -20,6 +19,7 @@ import {
     FaJava,
     FaBootstrap,
     FaAngular,
+    FaGithub,
 } from "react-icons/fa";
 
 import Colectif from "../assets/colectif.jpg";
@@ -132,6 +132,10 @@ export default function Projects() {
 
     return (
         <div id="projects" className="bg-polka-dots text-primary p-8">
+            <h2 className="text-3xl font-bold text-center text-primary mb-10 relative">
+                Proyectos
+                <span className="block w-24 h-1 bg-tertiary rounded mx-auto mt-2"></span>
+            </h2>
             <div className="max-w-7xl mx-auto px-6 sm:px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 justify-items-center">
 
                 {projects.map(({ id, title, img, shortDesc, techIcons, github }) => (
