@@ -94,29 +94,29 @@ const projects: Project[] = [
         ],
         github: "https://github.com/ARP-10/GestorBibliotecaManga",
     },
-    {
-        id: 4,
-        title: "ERM Cuático",
-        img: cuatico,
-        shortDesc:
-            "Campus virtual para gestión de cursos, alumnos y profesores.",
-        fullDesc: [
-            "Desarrollado con Angular y Tailwind CSS.",
-            "Permite a estudiantes comprar y cursar formaciones online.",
-            "Panel administrativo para gestión académica y operativa.",
-            "Backend en desarrollo con Spring Boot, Java y PostgreSQL.",
-        ],
-        techIcons: [
-            <FaAngular key="angular" />,
-            <SiTailwindcss key="tailwind" />,
-            <SiTypescript key="ts" />,
-            <FaJava key="java" />,
-            <SiPostgresql key="postgresql" />,
-            <SiSpring key="spring" />,
-            <SiNpm key="npm" />,
-        ],
-        github: "https://github.com/elurg/cuatico-dev",
-    },
+    // {
+    //     id: 4,
+    //     title: "ERM Cuático",
+    //     img: cuatico,
+    //     shortDesc:
+    //         "Campus virtual para gestión de cursos, alumnos y profesores.",
+    //     fullDesc: [
+    //         "Desarrollado con Angular y Tailwind CSS.",
+    //         "Permite a estudiantes comprar y cursar formaciones online.",
+    //         "Panel administrativo para gestión académica y operativa.",
+    //         "Backend en desarrollo con Spring Boot, Java y PostgreSQL.",
+    //     ],
+    //     techIcons: [
+    //         <FaAngular key="angular" />,
+    //         <SiTailwindcss key="tailwind" />,
+    //         <SiTypescript key="ts" />,
+    //         <FaJava key="java" />,
+    //         <SiPostgresql key="postgresql" />,
+    //         <SiSpring key="spring" />,
+    //         <SiNpm key="npm" />,
+    //     ],
+    //     github: "https://github.com/elurg/cuatico-dev",
+    // },
 ];
 
 export default function Projects() {
