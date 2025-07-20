@@ -8,9 +8,6 @@ import {
     SiTypescript,
     SiApachetomcat,
     SiMysql,
-    SiPostgresql,
-    SiSpring,
-    SiNpm,
 } from "react-icons/si";
 import {
     FaAndroid,
@@ -18,14 +15,12 @@ import {
     FaNodeJs,
     FaJava,
     FaBootstrap,
-    FaAngular,
     FaGithub,
 } from "react-icons/fa";
 
 import Colectif from "../assets/colectif.jpg";
 import codepadawan from "../assets/codepadawan.png";
 import manga from "../assets/manga.png";
-import cuatico from "../assets/cuatico.jpg";
 
 interface Project {
     id: number;
@@ -94,29 +89,6 @@ const projects: Project[] = [
         ],
         github: "https://github.com/ARP-10/GestorBibliotecaManga",
     },
-    // {
-    //     id: 4,
-    //     title: "ERM Cuático",
-    //     img: cuatico,
-    //     shortDesc:
-    //         "Campus virtual para gestión de cursos, alumnos y profesores.",
-    //     fullDesc: [
-    //         "Desarrollado con Angular y Tailwind CSS.",
-    //         "Permite a estudiantes comprar y cursar formaciones online.",
-    //         "Panel administrativo para gestión académica y operativa.",
-    //         "Backend en desarrollo con Spring Boot, Java y PostgreSQL.",
-    //     ],
-    //     techIcons: [
-    //         <FaAngular key="angular" />,
-    //         <SiTailwindcss key="tailwind" />,
-    //         <SiTypescript key="ts" />,
-    //         <FaJava key="java" />,
-    //         <SiPostgresql key="postgresql" />,
-    //         <SiSpring key="spring" />,
-    //         <SiNpm key="npm" />,
-    //     ],
-    //     github: "https://github.com/elurg/cuatico-dev",
-    // },
 ];
 
 export default function Projects() {
